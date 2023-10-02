@@ -1,0 +1,25 @@
+import React from 'react'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./views/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./views/About";
+import Portfolio from "./views/Portfolio";
+import Services from "./views/Services";
+import Contact from "./views/Contact";
+const Navigation = () => {
+  return (
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+  )
+}
+export default Navigation
