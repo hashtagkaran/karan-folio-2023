@@ -44,12 +44,12 @@ const Footer = () => {
       </div>
     </section>
     {/*  Newsletter End*/}
-        <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
           <div className="mx-auto max-w-screen-xl">
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">
                 <a href="/" className="flex items-center">
-                  <img src="https://hashtagkaran.com/images/nav-logo.png" width={100} className="mr-3 h-max" alt="FlowBite Logo"/>
+                  <img src="https://hashtagkaran.com/images/nav-logo.png"  className="mr-3 w-36" alt="FlowBite Logo"/>
                   {/*<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>*/}
                 </a>
               </div>

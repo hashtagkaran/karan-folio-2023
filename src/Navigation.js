@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./views/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -9,7 +9,7 @@ import Services from "./views/Services";
 import Contact from "./views/Contact";
 const Navigation = () => {
   return (
-      <BrowserRouter>
+      <Router basename="/">
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -19,7 +19,7 @@ const Navigation = () => {
           <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer/>
-      </BrowserRouter>
+      </Router>
   )
 }
 export default Navigation
