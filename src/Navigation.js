@@ -7,6 +7,7 @@ import About from "./views/About";
 import Portfolio from "./views/Portfolio";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
+import PortfolioDetail from "./views/PortfolioDetail";
 const Navigation = () => {
   return (
       <Router basename="/">
@@ -15,7 +16,9 @@ const Navigation = () => {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/portfolio/:projectId" element={<PortfolioDetail/>} />
           <Route path="/services" element={<Services/>} />
+          <Route path="/services/:serviceId" element={<Services/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer/>

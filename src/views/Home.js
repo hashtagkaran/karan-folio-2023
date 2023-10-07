@@ -14,7 +14,7 @@ const Home = () => {
                  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-yellow-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Know More
               </a>
-              <a href="#"
+              <a href="/karan_singh_resume_ux_ui.pdf" download
                  className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                 Download CV &nbsp;
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,8 +48,8 @@ const Home = () => {
                   <div className="flex flex-col items-center text-center justify-center">
                     <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Karan Singh</h2>
                     <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                    <p className="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial
-                      venmo tbh hot chicken gentrify portland.</p>
+                    <p className="text-base">Full Stack Front End Developer</p>
+                    <p className="text-base">Delhi, India</p>
                   </div>
                 </div>
                 <div
@@ -60,7 +60,7 @@ const Home = () => {
                     craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's
                     scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo
                     intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
-                  <a className="text-indigo-500 inline-flex items-center">Learn More
+                  <a href="/about" className="text-blue-700 inline-flex items-center">Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                          stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -77,7 +77,7 @@ const Home = () => {
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
             <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Projects Showcase</h2>
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"><a href="/portfolio">Projects Showcase</a></h2>
               <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Explore the whole
                 collection of open-source web components and elements built with the utility classes from Tailwind</p>
             </div>

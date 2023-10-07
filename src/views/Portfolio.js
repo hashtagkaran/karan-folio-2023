@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link, useParams} from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -9,7 +10,7 @@ const Portfolio = () => {
                className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                role="alert">
               <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span
-                className="text-sm font-medium">Flowbite is out! See what's new</span>
+                className="text-sm font-medium">2MP is in progress! See what's new</span>
               <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -27,14 +28,14 @@ const Portfolio = () => {
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
             <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
               <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <a href="/portfolio/1">
                   <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                        alt="Bonnie Avatar"/>
                 </a>
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    <a href="#">Bonnie Green</a>
+                    <a href="/portfolio/1">Bonnie Green</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
                   <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical
@@ -79,21 +80,24 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                  <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                       src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                       alt="Bonnie Avatar"/>
-                </a>
+                <Link to="/portfolio/2">
+                  <a href="">
+                    <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                         src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                         alt="Bonnie Avatar"/>
+                  </a>
+                </Link>
+
                 <div className="p-5">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    <a href="#">Bonnie Green</a>
+                    <a href="/portfolio/2">Bonnie Green</a>
                   </h3>
                   <span className="text-gray-500 dark:text-gray-400">CEO & Web Developer</span>
                   <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Bonnie drives the technical
                     strategy of the flowbite platform and brand.</p>
                   <ul className="flex space-x-4 sm:mt-0">
                     <li>
-                      <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <a href="/portfolio/2" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path fill-rule="evenodd"
                                 d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
