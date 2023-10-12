@@ -7,7 +7,7 @@ const Header = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/">
             <a className="flex items-center">
-              <img src="https://hashtagkaran.com/images/nav-logo.png"  className="mr-3 w-36" alt="site Logo"/>
+              <img src="/img/nav-logo.png"  className="mr-3 w-36" alt="site Logo"/>
             </a>
           </Link>
           <button data-collapse-toggle="navbar-default" type="button"
