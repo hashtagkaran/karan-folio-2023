@@ -29,14 +29,15 @@ const Footer = () => {
               </div>
               <div>
                 <button type="submit"
-                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe
+                        className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-yellow-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-yellow-600 dark:focus:ring-primary-800">Subscribe
                 </button>
               </div>
             </div>
             <div
                 className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We
-              care about the protection of your data. <a href="#"
-                                                         className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read
+              care about the protection of your data.
+              <a href="#"
+                 className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read
                 our Privacy Policy</a>.
             </div>
           </form>
@@ -49,7 +50,7 @@ const Footer = () => {
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">
                 <a href="/" className="flex items-center">
-                  <img src="https://hashtagkaran.com/images/nav-logo.png"  className="mr-3 w-36" alt="FlowBite Logo"/>
+                  <img src="/img/nav-logo.png" className="mr-3 w-36" alt="FlowBite Logo"/>
                   {/*<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>*/}
                 </a>
               </div>

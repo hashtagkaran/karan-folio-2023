@@ -14,10 +14,10 @@ const Navigation = () => {
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
+          {/*<Route path="/about" element={<About/>} />*/}
           <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/portfolio/:projectId" element={<PortfolioDetail/>} />
-          <Route path="/services" element={<Services/>} />
+          {/*<Route path="/services" element={<Services/>} />*/}
           <Route path="/services/:serviceId" element={<Services/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
