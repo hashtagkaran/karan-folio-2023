@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (<>
     {/*  Newsletter Start*/}
-    <section className="bg-white dark:bg-gray-800">
+    <section className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We
               care about the protection of your data.
               <a href="#"
-                 className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read
+                 className="font-medium text-primary-600 dark:text-yellow-500 hover:underline">Read
                 our Privacy Policy</a>.
             </div>
           </form>
@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
     </section>
     {/*  Newsletter End*/}
-        <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+        <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900">
           <div className="mx-auto max-w-screen-xl">
             <div className="md:flex md:justify-between">
               <div className="mb-6 md:mb-0">

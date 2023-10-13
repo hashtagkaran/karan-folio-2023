@@ -39,14 +39,14 @@ const Home = () => {
                   </div>
                   <div class="flex flex-col items-center text-center justify-center">
                     <h2 class="font-medium title-font mt-4 text-white text-lg">Karan Singh</h2>
-                    <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                    <div class="w-12 h-1 bg-yellow-500 rounded mt-2 mb-4"></div>
                     <p class="text-base text-gray-400">Full Stack Front End Developer</p>
                     <p className="text-base">Delhi, India</p>
                   </div>
                 </div>
                 <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                   <p class="leading-relaxed text-lg mb-4">  UI/UX Designer and Developer with 5+ years of experience creating user-friendly and high-performing web and mobile applications. Expertise in all phases of the design and development process, from user research and wireframing to prototyping and implementation. Proven track record of success in delivering projects on time and within budget, and collaborating with cross-functional teams to create innovative and impactful products.</p>
-                  <a class="text-indigo-400 inline-flex items-center">Learn More
+                  <a class="text-yellow-500 inline-flex items-center">Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
@@ -64,7 +64,7 @@ const Home = () => {
             <div className="flex flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Projects Showcase</h1>
-                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+                <div className="h-1 w-20 bg-yellow-500 rounded"></div>
               </div>
               <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Explore our diverse portfolio of innovative projects, showcasing our expertise in design, development, and creativity. See our work come to life!</p>
             </div>
@@ -140,14 +140,14 @@ const Home = () => {
             <div className="flex flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Services</h1>
-                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+                <div className="h-1 w-20 bg-yellow-500 rounded"></div>
               </div>
               <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Discover our comprehensive range of top-notch services tailored to meet your needs, delivered with excellence and unmatched dedication.</p>
             </div>
             <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-yellow-200 lg:h-12 lg:w-12 dark:bg-yellow-600">
                   <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -161,7 +161,7 @@ const Home = () => {
               </div>
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-yellow-600">
                   <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -174,7 +174,7 @@ const Home = () => {
               </div>
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-yellow-600">
                   <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
@@ -190,8 +190,8 @@ const Home = () => {
               </div>
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-yellowDull">
+                  <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="white"
                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
@@ -206,7 +206,7 @@ const Home = () => {
               </div>
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-yellow-600">
                   <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -219,12 +219,9 @@ const Home = () => {
               </div>
               <div>
                 <div
-                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
-                       viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                          clip-rule="evenodd"></path>
+                    className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-yellow-600">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.49 3.17C11.11 1.61 8.88999 1.61 8.50999 3.17C8.45326 3.40442 8.34198 3.62212 8.18522 3.80541C8.02845 3.9887 7.83062 4.13238 7.60784 4.22477C7.38505 4.31716 7.1436 4.35564 6.90313 4.33709C6.66266 4.31854 6.42997 4.24347 6.22399 4.118C4.85199 3.282 3.28199 4.852 4.11799 6.224C4.65799 7.11 4.17899 8.266 3.17099 8.511C1.60999 8.89 1.60999 11.111 3.17099 11.489C3.40547 11.5458 3.62322 11.6572 3.80651 11.8141C3.98979 11.971 4.13343 12.1689 4.22573 12.3918C4.31803 12.6147 4.35639 12.8563 4.33766 13.0968C4.31894 13.3373 4.24368 13.5701 4.11799 13.776C3.28199 15.148 4.85199 16.718 6.22399 15.882C6.42993 15.7563 6.66265 15.6811 6.90318 15.6623C7.14371 15.6436 7.38527 15.682 7.60817 15.7743C7.83108 15.8666 8.02904 16.0102 8.18592 16.1935C8.34281 16.3768 8.45419 16.5945 8.51099 16.829C8.88999 18.39 11.111 18.39 11.489 16.829C11.546 16.5946 11.6575 16.377 11.8144 16.1939C11.9713 16.0107 12.1692 15.8672 12.3921 15.7749C12.6149 15.6826 12.8564 15.6442 13.0969 15.6628C13.3373 15.6815 13.57 15.7565 13.776 15.882C15.148 16.718 16.718 15.148 15.882 13.776C15.7565 13.57 15.6815 13.3373 15.6628 13.0969C15.6442 12.8564 15.6826 12.6149 15.7749 12.3921C15.8672 12.1692 16.0107 11.9713 16.1939 11.8144C16.377 11.6575 16.5946 11.546 16.829 11.489C18.39 11.11 18.39 8.889 16.829 8.511C16.5945 8.45419 16.3768 8.34281 16.1935 8.18593C16.0102 8.02904 15.8666 7.83109 15.7743 7.60818C15.682 7.38527 15.6436 7.14372 15.6623 6.90318C15.681 6.66265 15.7563 6.42994 15.882 6.224C16.718 4.852 15.148 3.282 13.776 4.118C13.5701 4.24368 13.3373 4.31895 13.0968 4.33767C12.8563 4.35639 12.6147 4.31804 12.3918 4.22574C12.1689 4.13344 11.971 3.9898 11.8141 3.80651C11.6572 3.62323 11.5458 3.40548 11.489 3.171L11.49 3.17ZM9.99999 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 9.99999 7C9.20434 7 8.44128 7.31607 7.87867 7.87868C7.31606 8.44129 6.99999 9.20435 6.99999 10C6.99999 10.7956 7.31606 11.5587 7.87867 12.1213C8.44128 12.6839 9.20434 13 9.99999 13Z" fill="white"/>
                   </svg>
                 </div>
                 <h3 className="mb-2 text-xl font-bold dark:text-white">Content Creation</h3>
@@ -241,7 +238,7 @@ const Home = () => {
             <div className="flex flex-wrap w-full mb-20">
               <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">You can find me on</h1>
-                <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+                <div className="h-1 w-20 bg-yellow-500 rounded"></div>
               </div>
               <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">In addition to exploring my website, you can also connect with me and access my creative works and free assets on various platforms. Follow me on social media, visit my Figma, and explore my contributions to enrich your creative journey</p>
             </div>
