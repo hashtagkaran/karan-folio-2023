@@ -106,7 +106,7 @@ const Home = () => {
       {/*  Portfolio End*/}
 
       {/*  Services Start*/}
-      {/* <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -201,7 +201,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/*  Services End*/}
       {/*  Find me on Start */}
       {/* <section className="text-gray-400 body-font bg-gray-900">
