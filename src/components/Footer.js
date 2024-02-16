@@ -35,8 +35,8 @@ const Footer = () => {
             </div>
             <div
                 className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We
-              care about the protection of your data.
-              <a href="#"
+              care about the protection of your data.{" "}
+               <a href="#"
                  className="font-medium text-primary-600 dark:text-yellow-500 hover:underline">Read
                 our Privacy Policy</a>.
             </div>
@@ -51,7 +51,6 @@ const Footer = () => {
               <div className="mb-6 md:mb-0">
                 <a href="/" className="flex items-center">
                   <img src="/img/nav-logo.png" className="mr-3 w-36" alt="FlowBite Logo"/>
-                  {/*<span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>*/}
                 </a>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -101,7 +100,7 @@ const Footer = () => {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
             <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a
+            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
                 href="/" className="hover:underline">hashtagkaran</a>. All Rights Reserved.
             </span>
               <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
