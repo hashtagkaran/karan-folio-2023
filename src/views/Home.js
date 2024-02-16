@@ -106,7 +106,7 @@ const Home = () => {
       {/*  Portfolio End*/}
 
       {/*  Services Start*/}
-      <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -201,10 +201,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*  Services End*/}
       {/*  Find me on Start */}
-      {/* <section className="text-gray-400 body-font bg-gray-900">
+      <section className="text-gray-400 body-font bg-gray-900">
         <div className="max-w-screen-xl px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -226,7 +226,7 @@ const Home = () => {
                 </div>
               </a>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            {/* <div className="xl:w-1/4 md:w-1/2 p-4">
               <a href='https://figma.com/@hashtagkaran'>
                 <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
                   <img className="h-40 rounded w-full object-cover object-center mb-6"
@@ -247,7 +247,7 @@ const Home = () => {
                   <p className="leading-relaxed text-base">Figma creator: Assets, plugins, published for efficient design.</p>
                 </div>
               </a>
-            </div>
+            </div> */}
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <a href='https://figma.com/@hashtagkaran'>
               <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
@@ -261,7 +261,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/*  Find me on End */}
 
       {/* Content Start */}
