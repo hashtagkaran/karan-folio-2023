@@ -1,23 +1,46 @@
-import React from 'react'
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-stone-950">
         <div className="grid max-w-screen-xl max-h-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">A Full Stack Front End Engineer</h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">A versatile professional proficient in both front-end development and design, adept at creating engaging user interfaces and seamless user experiences.</p>
-            <a href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-yellow-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+              A Full Stack Front End Engineer
+            </h1>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              A versatile professional proficient in both front-end development
+              and design, adept at creating engaging user interfaces and
+              seamless user experiences.
+            </p>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-300"
+            >
               Know More
             </a>
-            <a href="/karan_singh_resume.pdf" download
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            <a
+              href="/karan_singh_resume.pdf"
+              download
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
               Download CV &nbsp;
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 7L10 13L16 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 7L10 13L16 7"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
             </a>
           </div>
@@ -29,7 +52,7 @@ const Home = () => {
       </section>
       {/*  Hero End*/}
       {/*About Start*/}
-      <section class="text-gray-400 bg-gray-900 body-font">
+      <section class="text-gray-400 bg-stone-950 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-col">
           <div class="">
             <div class="flex flex-col sm:flex-row mt-10">
@@ -38,16 +61,39 @@ const Home = () => {
                   <img src="/img/hero-img.png" />
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class="font-medium title-font mt-4 text-white text-lg">Karan Singh</h2>
-                  <div class="w-12 h-1 bg-yellow-500 rounded mt-2 mb-4"></div>
-                  <p class="text-base text-gray-400">Full Stack Front End Developer</p>
+                  <h2 class="font-medium title-font mt-4 text-white text-lg">
+                    Karan Singh
+                  </h2>
+                  <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
+                  <p class="text-base text-gray-400">
+                    Full Stack Front End Developer
+                  </p>
                   <p className="text-base">Delhi, India</p>
                 </div>
               </div>
               <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p class="leading-relaxed text-lg mb-4">  UI/UX Designer and Developer with 5+ years of experience creating user-friendly and high-performing web and mobile applications. Expertise in all phases of the design and development process, from user research and wireframing to prototyping and implementation. Proven track record of success in delivering projects on time and within budget, and collaborating with cross-functional teams to create innovative and impactful products.</p>
-                <a class="text-yellow-500 inline-flex items-center">Learn More
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <p class="leading-relaxed text-lg mb-4">
+                  {" "}
+                  UI/UX Designer and Developer with 5+ years of experience
+                  creating user-friendly and high-performing web and mobile
+                  applications. Expertise in all phases of the design and
+                  development process, from user research and wireframing to
+                  prototyping and implementation. Proven track record of success
+                  in delivering projects on time and within budget, and
+                  collaborating with cross-functional teams to create innovative
+                  and impactful products.
+                </p>
+                <a class="text-orange-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </a>
@@ -59,45 +105,62 @@ const Home = () => {
       {/*About End*/}
 
       {/*  Portfolio Start*/}
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-stone-950">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Projects Showcase</h1>
-              <div className="h-1 w-20 bg-yellow-500 rounded"></div>
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                Projects Showcase
+              </h1>
+              <div className="h-1 w-20 bg-orange-500 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Explore our diverse portfolio of innovative projects, showcasing our expertise in design, development, and creativity. See our work come to life!</p>
+            <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+              Explore our diverse portfolio of innovative projects, showcasing
+              our expertise in design, development, and creativity. See our work
+              come to life!
+            </p>
           </div>
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-stone-950 dark:border-gray-700">
               <a href="/portfolio/1">
-                <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src="/img/app1-thumb.png"
-                  alt="Bonnie Avatar" />
+                  alt="Bonnie Avatar"
+                />
               </a>
               <div className="p-5">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="/portfolio/1">Marriage App</a>
                 </h3>
-                <span className="text-gray-500 dark:text-gray-400">General</span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400"> Find love, chat, and meet nearby singles effortlessly.</p>
-
+                <span className="text-gray-500 dark:text-gray-400">
+                  General
+                </span>
+                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  {" "}
+                  Find love, chat, and meet nearby singles effortlessly.
+                </p>
               </div>
             </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-stone-950 dark:border-gray-700">
               <a href="/portfolio/2">
-                <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+                <img
+                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src="/img/app2-thumb.png"
-                  alt="Bonnie Avatar" />
+                  alt="Bonnie Avatar"
+                />
               </a>
 
               <div className="p-5">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="/portfolio/2">Dating App</a>
                 </h3>
-                <span className="text-gray-500 dark:text-gray-400">General</span>
+                <span className="text-gray-500 dark:text-gray-400">
+                  General
+                </span>
                 <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  Find love, chat, and meet nearby singles effortlessly.</p>
+                  Find love, chat, and meet nearby singles effortlessly.
+                </p>
               </div>
             </div>
           </div>
@@ -106,12 +169,12 @@ const Home = () => {
       {/*  Portfolio End*/}
 
       {/*  Services Start*/}
-      {/* <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-stone-950">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Services</h1>
-              <div className="h-1 w-20 bg-yellow-500 rounded"></div>
+              <div className="h-1 w-20 bg-orange-500 rounded"></div>
             </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">Discover our comprehensive range of top-notch services tailored to meet your needs, delivered with excellence and unmatched dedication.</p>
           </div>
@@ -204,31 +267,48 @@ const Home = () => {
       </section> */}
       {/*  Services End*/}
       {/*  Find me on Start */}
-      <section className="text-gray-400 body-font bg-gray-900">
+      <section className="text-gray-400 body-font bg-stone-950">
         <div className="max-w-screen-xl px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">You can find me on</h1>
-              <div className="h-1 w-20 bg-yellow-500 rounded"></div>
+              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+                You can find me on
+              </h1>
+              <div className="h-1 w-20 bg-orange-500 rounded"></div>
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">In addition to exploring my website, you can also connect with me and access my creative works and free assets on various platforms. Follow me on social media, visit my Figma, and explore my contributions to enrich your creative journey</p>
+            <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+              In addition to exploring my website, you can also connect with me
+              and access my creative works and free assets on various platforms.
+              Follow me on social media, visit my Figma, and explore my
+              contributions to enrich your creative journey
+            </p>
           </div>
           <a></a>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">
-              <a href='https://figma.com/@hashtagkaran'>
-                <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                  <img className="h-40 rounded w-full object-cover object-center mb-6"
-                    src="/img/figma.png" alt="content" />
-                  <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Free Assets and work</h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4">Figma</h2>
-                  <p className="leading-relaxed text-base">Figma creator: Assets, plugins, published for efficient design.</p>
+              <a href="https://figma.com/@hashtagkaran">
+                <div className="bg-stone-950 bg-opacity-40 p-6 rounded-lg">
+                  <img
+                    className="h-40 rounded w-full object-cover object-center mb-6"
+                    src="/img/figma.png"
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                    Free Assets and work
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">
+                    Figma
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Figma creator: Assets, plugins, published for efficient
+                    design.
+                  </p>
                 </div>
               </a>
             </div>
             {/* <div className="xl:w-1/4 md:w-1/2 p-4">
               <a href='https://figma.com/@hashtagkaran'>
-                <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <div className="bg-stone-950 bg-opacity-40 p-6 rounded-lg">
                   <img className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/img/figma.png" alt="content" />
                   <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Get some business</h3>
@@ -239,7 +319,7 @@ const Home = () => {
             </div>
             <div className="xl:w-1/4 md:w-1/2 p-4">
               <a href='https://figma.com/@hashtagkaran'>
-                <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+                <div className="bg-stone-950 bg-opacity-40 p-6 rounded-lg">
                   <img className="h-40 rounded w-full object-cover object-center mb-6"
                     src="/img/figma.png" alt="content" />
                   <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">My work</h3>
@@ -249,14 +329,24 @@ const Home = () => {
               </a>
             </div> */}
             <div className="xl:w-1/4 md:w-1/2 p-4">
-              <a href='https://figma.com/@hashtagkaran'>
-              <div className="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-                <img className="h-40 rounded w-full object-cover object-center mb-6"
-                    src="/img/figma.png" alt="content" />
-                <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">Free Assets</h3>
-                  <h2 className="text-lg text-white font-medium title-font mb-4"><s>Envato</s> (Figma)</h2>
-                  <p className="leading-relaxed text-base">Figma creator: Assets, plugins, published for efficient design.</p>
-              </div>
+              <a href="https://figma.com/@hashtagkaran">
+                <div className="bg-stone-950 bg-opacity-40 p-6 rounded-lg">
+                  <img
+                    className="h-40 rounded w-full object-cover object-center mb-6"
+                    src="/img/figma.png"
+                    alt="content"
+                  />
+                  <h3 className="tracking-widest text-indigo-400 text-xs font-medium title-font">
+                    Free Assets
+                  </h3>
+                  <h2 className="text-lg text-white font-medium title-font mb-4">
+                    <s>Envato</s> (Figma)
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Figma creator: Assets, plugins, published for efficient
+                    design.
+                  </p>
+                </div>
               </a>
             </div>
           </div>
@@ -265,7 +355,7 @@ const Home = () => {
       {/*  Find me on End */}
 
       {/* Content Start */}
-      {/* <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-stone-950">
         <div
           className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -289,7 +379,7 @@ const Home = () => {
       </section> */}
       {/* Content End */}
       {/* Content Start */}
-      {/* <section className="bg-white dark:bg-gray-900">
+      {/* <section className="bg-white dark:bg-stone-950">
         <div
           className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="grid grid-cols-2 gap-4 mt-8">
@@ -313,8 +403,7 @@ const Home = () => {
         </div>
       </section> */}
       {/* Content End */}
-
     </div>
-  )
-}
-export default Home
+  );
+};
+export default Home;
