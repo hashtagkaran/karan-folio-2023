@@ -42,112 +42,237 @@ const Portfolio = () => {
       {/*  Portfolio Start*/}
       <section className="bg-white dark:bg-stone-950">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="/portfolio/1">
-                <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="/img/app1-thumb.png"
-                  alt="Bonnie Avatar"
-                />
+                <img class="rounded-t-lg" src="/img/app1-thumb.png" alt="" />
               </a>
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="/portfolio/1">Marriage App</a>
-                </h3>
-                <span className="text-gray-500 dark:text-gray-400">
-                  General
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  {" "}
-                  Find love, chat, and meet nearby singles effortlessly.
-                </p>
-              </div>
-            </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-              <Link to="/portfolio/2">
-                <a href="">
-                  <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                    src="/img/app2-thumb.png"
-                    alt="Bonnie Avatar"
-                  />
+              <div class="p-5">
+                <a href="/portfolio/1">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Marriage App
+                  </h5>
                 </a>
-              </Link>
-
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="/portfolio/2">Dating App</a>
-                </h3>
-                <span className="text-gray-500 dark:text-gray-400">
-                  General
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  Find love, chat, and meet nearby singles effortlessly.
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
                 </p>
+                <a
+                  href="/portfolio/1"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="/portfolio/2">
+                <img class="rounded-t-lg" src="/img/app2-thumb.png" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="/portfolio/2">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Dating App
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+                <a
+                  href="/portfolio/2"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="/portfolio/3">
-                <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="/img/web1-thumb.png"
-                  alt="Bonnie Avatar"
-                />
+                <img class="rounded-t-lg" src="/img/web1-thumb.png" alt="" />
               </a>
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="/portfolio/3">AI Website</a>
-                </h3>
-                <span className="text-gray-500 dark:text-gray-400">
-                  General
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  {" "}
-                  Find love, chat, and meet nearby singles effortlessly.
+              <div class="p-5">
+                <a href="/portfolio/3">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    AI Beauty Care
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
                 </p>
+                <a
+                  href="/portfolio/3"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="/portfolio/4">
-                <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="/img/web2-thumb.png"
-                  alt="Bonnie Avatar"
-                />
+                <img class="rounded-t-lg" src="/img/web2-thumb.png" alt="" />
               </a>
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="/portfolio/4">Job Portal</a>
-                </h3>
-                <span className="text-gray-500 dark:text-gray-400">
-                  General
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  {" "}
-                  Find love, chat, and meet nearby singles effortlessly.
+              <div class="p-5">
+                <a href="/portfolio/4">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Job Portal
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
                 </p>
+                <a
+                  href="/portfolio/4"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
-            <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="/portfolio/5">
+                <img class="rounded-t-lg" src="/img/web3-thumb.png" alt="" />
+              </a>
+              <div class="p-5">
+                <a href="/portfolio/5">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Relax and Calm
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
+                </p>
+                <a
+                  href="/portfolio/5"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* Portfolio Item */}
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <a href="/portfolio/6">
                 <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="/img/web3-thumb.png"
-                  alt="Bonnie Avatar"
+                  class="rounded-t-lg"
+                  src="https://flowbite.com/docs/images/blog/image-1.jpg"
+                  alt=""
                 />
               </a>
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <a href="/portfolio/5">Mindfull Web</a>
-                </h3>
-                <span className="text-gray-500 dark:text-gray-400">
-                  General
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                  {" "}
-                  Find love, chat, and meet nearby singles effortlessly.
+              <div class="p-5">
+                <a href="/portfolio/6">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Marketing Agency
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Here are the biggest enterprise technology acquisitions of
+                  2021 so far, in reverse chronological order.
                 </p>
+                <a
+                  href="/portfolio/6"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

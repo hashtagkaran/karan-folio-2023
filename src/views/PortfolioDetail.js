@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 const PortfolioDetail = () => {
   let { projectId } = useParams();
-  console.warn(projectId);
+  // console.warn(projectId);
 
   const makePost = () => {};
   const data = [
@@ -56,16 +56,23 @@ const PortfolioDetail = () => {
       hero: "/img/web3-hero.png",
       image1: "/img/mindfull-app.png",
     },
+    {
+      name: "Messaging App",
+      title: "Messaging App - Coming Soon",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      // hero: "/img/web3-hero.png",
+      // image1: "/img/mindfull-app.png",
+    },
   ];
 
   return (
     <div>
       {projectId < data.length + 1 ? (
-        <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+        <main className="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-stone-950 antialiased">
           <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
             <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
               <nav
-                className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-stone-950 dark:border-gray-700 mb-5"
+                className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-stone-900 dark:border-gray-700 mb-5"
                 aria-label="Breadcrumb"
               >
                 <ol className="inline-flex items-center space-x-1 md:space-x-3">
@@ -216,7 +223,7 @@ const PortfolioDetail = () => {
           <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
             <article className="mx-auto w-full  format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
               <nav
-                className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-stone-950 dark:border-gray-700 mb-5"
+                className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-stone-900 dark:border-gray-700 mb-5"
                 aria-label="Breadcrumb"
               >
                 <ol className="inline-flex items-center space-x-1 md:space-x-3">
