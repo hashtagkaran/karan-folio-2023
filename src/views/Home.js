@@ -1,52 +1,58 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link, useParams } from "react-router-dom";
+import HeroBgImage from "/src/assets/img/hero-bg.jpg"
 
 const Home = () => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <div>
-      <section className="bg-white dark:bg-stone-950">
-        <div className="grid max-w-screen-xl max-h-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-              A Full Stack Front End Engineer
+      <section className="h-screen flex items-center bg-stone-950  " style={{ backgroundImage: `url(${HeroBgImage})` }}>
+        <div className="max-w-screen-xl max-h-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
+          <div className="mr-auto place-self-center lg:col-span-7 ">
+            <h1 className="mb-4 text-[40px] font-extrabold tracking-tight leading-none dark:text-white">
+              Hey, I'm Karan Singh<br/>
+              <div className="text-[80px] mt-5">UX Designer with 5+ years of experience crafting intuitive web and
+                mobile designs, from concept to launch.
+              </div>
             </h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              A versatile professional proficient in both front-end development
-              and design, adept at creating engaging user interfaces and
-              seamless user experiences.
-            </p>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-300"
-            >
-              Know More
-            </a>
-            <a
-              href="/karan-singh-resume-may-24.pdf"
-              download
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Download CV &nbsp;
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 7L10 13L16 7"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
+            {/*<p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">*/}
+            {/*  A versatile professional proficient in both front-end development*/}
+            {/*  and design, adept at creating engaging user interfaces and*/}
+            {/*  seamless user experiences.*/}
+            {/*</p>*/}
+            {/*<a*/}
+            {/*    href="#"*/}
+            {/*    className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:ring-primary-300"*/}
+            {/*>*/}
+            {/*  Know More*/}
+            {/*</a>*/}
+            <div>
+              <Link className="relative inline-block mt-10" href="/">
+                {/* Dashed outline button */}
+                <div
+                    className={`absolute inset-0 border-2 border-dashed border-white rounded-md transition-opacity duration-200 ${
+                        isHovered ? "opacity-100" : "opacity-0"
+                    }`}
+                ></div>
+
+                {/* Main button */}
+                <button
+                    className={`relative px-6 py-3 bg-primary text-primary-foreground flex  bg-white items-center  border-[1.5px] rounded-md transition-all duration-200 ease-in-out ${
+                        isHovered ? "-translate-x-2 -translate-y-2" : ""
+                    }`}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    onClick={()=> alert("check here")}
+                >
+                  Know More
+                </button>
+              </Link>
+            </div>
+
           </div>
           <div className="lg:mt-0 lg:col-span-5 lg:flex">
             {/* <img src="/img/hero-img.png" alt="mockup"/> */}
-            <img src="/img/anime-logo1.png" alt="mockup" />
+            {/*<img src="/img/hero-img1.png" alt="mockup" />*/}
           </div>
         </div>
       </section>
@@ -58,11 +64,11 @@ const Home = () => {
             <div class="flex flex-col sm:flex-row mt-10">
               <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div class="w-20 h-20 rounded-full inline-flex items-center justify-center">
-                  <img src="/img/hero-img.png" />
+                  <img src="/img/hero-img.png"/>
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
                   <h2 class="font-medium title-font mt-4 text-white text-lg">
-                    Karan Singh
+                  Karan Singh
                   </h2>
                   <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
                   <p class="text-base text-gray-400">
