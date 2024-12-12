@@ -3,6 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import { AiOutlineSpotify } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
 import { FaFigma } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { RiTwitterXFill } from "react-icons/ri";
+import { AiOutlineDiscord } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -10,7 +13,6 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
-      <ConnectSection />
       <ConnectSectionNew />
     </>
   );
@@ -26,7 +28,7 @@ const HeroSection = () => {
           <h1 className="mb-4 text-[40px] font-extrabold tracking-tight leading-none dark:text-white">
             Hey, I'm Karan Singh
             <br />
-            <div className="text-[80px] mt-5">
+            <div className="mt-5 leading-none md:text-[60px] lg:text-[80px]">
               <span className="text-orange-500">UX Designer</span> with 5+ years
               of experience crafting intuitive web and mobile designs, from
               concept to launch.
@@ -34,14 +36,12 @@ const HeroSection = () => {
           </h1>
           <div>
             <Link className="relative inline-block mt-10" href="/" to="/">
-              {/* Dashed outline button */}
               <div
                 className={`absolute inset-0 border-2 border-dashed border-white rounded-md transition-opacity duration-200 ${
                   isHovered ? "opacity-100" : "opacity-0"
                 }`}
               ></div>
 
-              {/* Main button */}
               <button
                 className={`relative px-6 py-3 bg-primary text-primary-foreground flex  bg-white items-center  border-[1.5px] rounded-md transition-all duration-200 ease-in-out ${
                   isHovered ? "-translate-x-2 -translate-y-2" : ""
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 Know More
               </button>
             </Link>
-            <a className="text-orange-500 inline-flex items-center p-3 ml-5">
+            <a className="text-orange-500 inline-flex items-center p-3 ml-5 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-100 ">
               Learn More
               <svg
                 fill="none"
@@ -84,7 +84,8 @@ const AboutSection = () => {
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light dark:text-gray-500 sm:text-lg text-gray-400">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold dark:text-gray-900 text-white">
-            Lil Bit About me
+            Here’s My Canvas 🎨 – A glimpse into the creative journey that
+            shapes my design world!
           </h2>
           <p className="mb-4">
             UI/UX Designer and Developer with 5+ years of experience creating
@@ -157,29 +158,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 1
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 1
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -195,29 +182,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 2
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 2
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -233,29 +206,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 3
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 3
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -271,29 +230,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 4
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 4
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -310,29 +255,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 5
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 5
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -349,29 +280,15 @@ const ProjectList = () => {
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="size-10 sm:size-12"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-
+                  {/*Image Or Logo Here*/}
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 6
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Go around the world
+                    Project 6
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -498,6 +415,46 @@ const ConnectSectionNew = () => {
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <FaFigma color="white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  <FiGithub color="white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  <RiTwitterXFill color="white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  <AiOutlineDiscord color="white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  <AiOutlineDiscord color="white" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  <AiOutlineDiscord color="white" />
                 </a>
               </li>
             </ul>

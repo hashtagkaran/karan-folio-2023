@@ -3,8 +3,8 @@ import { Link, useParams } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <>
-      <section className="bg-white dark:bg-stone-950">
+    <div className="bg-stone-950">
+      <section className=" dark:bg-stone-950">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a
             href="#"
@@ -39,247 +39,167 @@ const Portfolio = () => {
           </p>
         </div>
       </section>
-      {/*  Portfolio Start*/}
-      <section className="bg-white dark:bg-stone-950">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/1">
-                <img class="rounded-t-lg" src="/img/app1-thumb.png" alt="" />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/1">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Marriage App
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/1"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/2">
-                <img class="rounded-t-lg" src="/img/app2-thumb.png" alt="" />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/2">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Dating App
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/2"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/3">
-                <img class="rounded-t-lg" src="/img/web1-thumb.png" alt="" />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/3">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    AI Beauty Care
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/3"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/4">
-                <img class="rounded-t-lg" src="/img/web2-thumb.png" alt="" />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/4">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Job Portal
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/4"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/5">
-                <img class="rounded-t-lg" src="/img/web3-thumb.png" alt="" />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/5">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Relax and Calm
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/5"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            {/* Portfolio Item */}
-            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="/portfolio/6">
-                <img
-                  class="rounded-t-lg"
-                  src="https://flowbite.com/docs/images/blog/image-1.jpg"
-                  alt=""
-                />
-              </a>
-              <div class="p-5">
-                <a href="/portfolio/6">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Marketing Agency
-                  </h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  Here are the biggest enterprise technology acquisitions of
-                  2021 so far, in reverse chronological order.
-                </p>
-                <a
-                  href="/portfolio/6"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Read more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*  Portfolio End*/}
-    </>
+      <ProjectList />
+    </div>
   );
 };
 export default Portfolio;
+
+const ProjectList = () => {
+  return (
+    <>
+      <div className="container mx-auto ">
+        <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 1
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 1
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 2
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 2
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 3
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 3
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 4
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 4
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 5
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 5
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 6
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Project 6
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, praesentium voluptatem omnis atque culpa
+                    repellendus.
+                  </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
