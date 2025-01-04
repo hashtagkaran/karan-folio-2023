@@ -144,51 +144,45 @@ const PortfolioDetail = () => {
                   </li>
                 </ol>
               </nav>
-
-              <header className="mb-4 lg:mb-6 not-format">
-                <address className="flex items-center mb-6 not-italic">
-                  <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-                    <img
-                      className="mr-4 w-16 h-16 rounded-full"
-                      src="/img/hero-img.png"
-                      alt="Jese Leos"
-                    />
-                    <div>
-                      <a
-                        href="#"
-                        rel="author"
-                        className="text-xl font-bold text-gray-900 dark:text-white"
-                      >
-                        Karan Singh
-                      </a>
-                      <p className="text-base text-gray-500 dark:text-gray-400">
-                        Designer & Front End Developer
-                      </p>
-                      <p className="text-base text-gray-500 dark:text-gray-400">
-                        <time
-                          pubdate
-                          dateTime="2024-02-16"
-                          title="February 8th, 2022"
-                        >
-                          Feb. 16, 2024
-                        </time>
-                      </p>
-                    </div>
-                  </div>
-                </address>
-                <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
-                  {projectId < data.length + 1
-                    ? data[projectId - 1].title
-                    : "not found"}
-                </h1>
-              </header>
+              <h1 className="text-8xl text-white p-5">
+                {projectId < data.length + 1
+                  ? data[projectId - 1].title
+                  : "not found"}
+              </h1>
               <div className="text-gray-300">
-                <p className="lead">
+                <p className="lead p-5">
                   {projectId < data.length + 1
                     ? data[projectId - 1].desc
                     : "not found"}
                 </p>
               </div>
+              <header className="mb-4 lg:mb-6 not-format">
+                <div className="container mx-auto">
+                  <div className="grid grid-cols-4 gap-4 text-white">
+                    <div className="p-5">
+                      <h2 className="text-gray-400">Project Name</h2>
+                      <p className="text-4xl">
+                        {projectId < data.length + 1
+                          ? data[projectId - 1].title
+                          : "not found"}
+                      </p>
+                    </div>
+                    <div className="p-5">
+                      <h2 className="text-gray-400">Industry</h2>
+                      <p className="text-4xl">Peoples</p>
+                    </div>
+                    <div className="p-5">
+                      <h2 className="text-gray-400">Expertise</h2>
+                      <p className="text-4xl">UX/UI Design</p>
+                    </div>
+                    <div className="p-5">
+                      <h2 className="text-gray-400">Year</h2>
+                      <p className="text-4xl">2023</p>
+                    </div>
+                  </div>
+                </div>
+              </header>
+
               <br />
               {projectId ? (
                 <img src={data[projectId - 1].hero} alt="" width="100%" />

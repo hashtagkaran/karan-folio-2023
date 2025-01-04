@@ -19,14 +19,14 @@ const Newsletter = () => {
       <Link className="relative inline-block" href="/" to="/">
         {/* Dashed outline button */}
         <div
-          className={`absolute inset-0 border-2 border-dashed border-white rounded-md transition-opacity duration-200 ${
+          className={`absolute inset-0 border-2 border-dashed border-red-100 rounded-md transition-opacity duration-200 ${
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         ></div>
 
         {/* Main button */}
         <button
-          className={`relative px-6 py-3 bg-primary text-primary-foreground flex  bg-white items-center  border-[1.5px] rounded-md transition-all duration-200 ease-in-out ${
+          className={`relative px-6 py-3 bg-primary text-primary-foreground flex  bg-[#0077B5] items-center border-[#0077B5] border-[1.5px] rounded-md transition-all duration-200 ease-in-out ${
             isHovered ? "-translate-x-2 -translate-y-2" : ""
           }`}
           onMouseEnter={() => setIsHovered(true)}
@@ -34,7 +34,7 @@ const Newsletter = () => {
           onClick={() => alert("check here")}
         >
           <a
-            className="flex justify-center items-center font-medium"
+            className="flex justify-center items-center font-medium text-white"
             href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7256012452977418240"
             target="_blank"
           >

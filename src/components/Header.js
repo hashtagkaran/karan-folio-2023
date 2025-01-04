@@ -8,6 +8,25 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
   const [isHovered, setIsHovered] = useState(false);
+  const handleDownload = () => {
+    // URL of the file to download
+    const fileUrl = "/karan_singh_resume(updated).pdf"; // Replace with your file URL
+    const fileName = "karan_singh_ui_ux_designer.pdf"; // The name of the downloaded file
+
+    // Create an anchor element
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+
+    // Append the anchor to the body (required for Firefox)
+    document.body.appendChild(link);
+
+    // Programmatically click the anchor to trigger the download
+    link.click();
+
+    // Remove the anchor from the DOM
+    document.body.removeChild(link);
+  };
   return (
     <>
       <nav className="bg-white border-gray-200 dark:bg-black">
@@ -66,7 +85,7 @@ const Header = () => {
                     }`}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    onClick={() => alert("check here")}
+                    onClick={() => handleDownload()}
                   >
                     Download CV &nbsp;
                     <svg
@@ -174,7 +193,7 @@ const Header = () => {
                     }`}
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    onClick={() => alert("check here")}
+                    onClick={() => handleDownload()}
                   >
                     Download CV &nbsp;
                     <svg

@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AiOutlineSpotify } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
-import { FaFigma } from "react-icons/fa";
+import { FaFigma, FaBehance } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { AiOutlineDiscord } from "react-icons/ai";
+import { TbBrandGumroad } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -53,7 +54,10 @@ const HeroSection = () => {
                 Know More
               </button>
             </Link>
-            <a className="text-orange-500 inline-flex items-center p-3 ml-5 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-300 after:ease-out hover:after:scale-x-100 ">
+            <a
+              className="text-orange-500 inline-flex items-center p-3 ml-5"
+              href="#AboutSection"
+            >
               Learn More
               <svg
                 fill="none"
@@ -80,10 +84,13 @@ const HeroSection = () => {
 
 const AboutSection = () => {
   return (
-    <section className="dark:bg-white bg-gray-900">
+    <section className="bg-white dark:bg-stone-950" id="AboutSection">
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light dark:text-gray-500 sm:text-lg text-gray-400">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold dark:text-gray-900 text-white">
+          <h2
+            data-aos="fade-right"
+            className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
             Here’s My Canvas 🎨 – A glimpse into the creative journey that
             shapes my design world!
           </h2>
@@ -151,124 +158,128 @@ const ProjectsSection = () => {
 const ProjectList = () => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <a
+              href="/portfolio/2"
+              className="group relative block h-64 sm:h-80 lg:h-96"
+            >
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
                   {/*Image Or Logo Here*/}
+                  <img
+                    src="/img/dating_app.png"
+                    width="100%"
+                    alt="dating app"
+                  />
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 1
+                    Dating Application
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 1
+                    Dating Application
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
+                    A dating application connects individuals seeking
+                    relationships, facilitating matches based on preferences,
+                    location, and interests for meaningful connections.
                   </p>
 
                   <p className="mt-8 font-bold">Read more</p>
                 </div>
               </div>
             </a>
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <a
+              href="/portfolio/1"
+              className="group relative block h-64 sm:h-80 lg:h-96"
+            >
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
                   {/*Image Or Logo Here*/}
+                  <img
+                    src="/img/marriage_app.png"
+                    width="100%"
+                    alt="marriage app"
+                  />
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 2
+                    Marriage Application
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 2
+                    Marriage Application
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
+                    A marriage application is a formal request submitted to
+                    authorities seeking legal recognition and registration of a
+                    marital union.
                   </p>
 
                   <p className="mt-8 font-bold">Read more</p>
                 </div>
               </div>
             </a>
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <a
+              href="/portfolio/3"
+              className="group relative block h-64 sm:h-80 lg:h-96"
+            >
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
                   {/*Image Or Logo Here*/}
+                  <img src="/img/ai_app.png" width="100%" alt="dating app" />
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 3
+                    AI Website
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 3
+                    AI Website
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
+                    AI-driven website project enhancing user experience through
+                    personalized content, intelligent navigation, and automated
+                    customer support for increased engagement.
                   </p>
 
                   <p className="mt-8 font-bold">Read more</p>
                 </div>
               </div>
             </a>
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <a
+              href="/portfolio/4"
+              className="group relative block h-64 sm:h-80 lg:h-96"
+            >
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
                   {/*Image Or Logo Here*/}
+                  <img
+                    src="/img/hiring_app.png"
+                    width="100%"
+                    alt="dating app"
+                  />
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 4
+                    Hiring Portal
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 4
+                    Hiring Portal
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
-                  </p>
-
-                  <p className="mt-8 font-bold">Read more</p>
-                </div>
-              </div>
-            </a>
-
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
-              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
-              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
-                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
-                  {/*Image Or Logo Here*/}
-                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 5
-                  </h2>
-                </div>
-
-                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
-                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 5
-                  </h3>
-                  <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
+                    A Hiring Portal is a web-based platform that connects job
+                    seekers with employers, streamlining the recruitment process
+                    through features like job postings, resume submissions, and
+                    application tracking.
                   </p>
 
                   <p className="mt-8 font-bold">Read more</p>
@@ -276,25 +287,55 @@ const ProjectList = () => {
               </div>
             </a>
 
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <a
+              href="/portfolio/5"
+              className="group relative block h-64 sm:h-80 lg:h-96"
+            >
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
                   {/*Image Or Logo Here*/}
+                  <img src="/img/mind_app.png" width="100%" alt="dating app" />
                   <h2 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 6
+                    Mindfull App
                   </h2>
                 </div>
 
                 <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
                   <h3 className="mt-4 text-xl font-medium sm:text-2xl">
-                    Project 6
+                    Mindfull App
                   </h3>
                   <p className="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate, praesentium voluptatem omnis atque culpa
-                    repellendus.
+                    Mindfull App is a mindfulness application designed to help
+                    users reduce stress, improve focus, and enhance overall
+                    well-being.
                   </p>
+
+                  <p className="mt-8 font-bold">Read more</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+              <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
+              <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
+                <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                  {/*Image Or Logo Here*/}
+                  <img
+                    src="/img/message_app.png"
+                    width="100%"
+                    alt="dating app"
+                  />
+                  <h2 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Messaging App
+                  </h2>
+                </div>
+
+                <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8 ">
+                  <h3 className="mt-4 text-xl font-medium sm:text-2xl">
+                    Messaging App
+                  </h3>
+                  <p className="mt-4 text-sm sm:text-base">Coming soon</p>
 
                   <p className="mt-8 font-bold">Read more</p>
                 </div>
@@ -446,7 +487,7 @@ const ConnectSectionNew = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  <AiOutlineDiscord color="white" />
+                  <TbBrandGumroad color="white" />
                 </a>
               </li>
               <li>
@@ -454,13 +495,16 @@ const ConnectSectionNew = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  <AiOutlineDiscord color="white" />
+                  <FaBehance color="white" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="lg:mt-0 lg:col-span-5 lg:flex">
+        <h1 className="mt-5 text-[40px] font-extrabold tracking-tight leading-none dark:text-white">
+          <a href="mailto:hi@hashtagkaran.com"> hi@hashtagkaran.com</a>
+        </h1>
+        <div className="lg:mt-0 lg:col-span-5 lg:flex hover:underline">
           {/* <img src="/img/hero-img.png" alt="mockup"/> */}
           {/*<img src="/img/hero-img1.png" alt="mockup" />*/}
         </div>
