@@ -94,7 +94,7 @@ const AboutSection = () => {
             Here’s My Canvas 🎨 – A glimpse into the creative journey that
             shapes my design world!
           </h2>
-          <p className="mb-4">
+          <p className="mb-4" data-aos="fade-right">
             UI/UX Designer and Developer with 5+ years of experience creating
             user-friendly and high-performing web and mobile applications.
             Expertise in all phases of the design and development process, from
@@ -103,7 +103,10 @@ const AboutSection = () => {
             within budget, and collaborating with cross-functional teams to
             create innovative and impactful products.
           </p>
-          <a className="text-orange-500 inline-flex items-center">
+          <a
+            className="text-orange-500 inline-flex items-center"
+            data-aos="fade-right"
+          >
             Learn More
             <svg
               fill="none"
@@ -120,6 +123,7 @@ const AboutSection = () => {
         </div>
         <div className="">
           <img
+            data-aos="fade-up"
             className="w-full rounded-lg"
             src="/img/hero-img.png"
             alt="office content 1"
@@ -138,12 +142,23 @@ const ProjectsSection = () => {
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div className="flex flex-wrap w-full">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+            <h1
+              className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"
+              data-aos="fade-right"
+            >
               Projects Showcase
             </h1>
-            <div className="h-1 w-20 bg-orange-500 rounded"></div>
+            <div
+              className="h-1 w-20 bg-orange-500 rounded"
+              data-aos="fade-right"
+              data-aos-duration="200"
+            ></div>
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90">
+          <p
+            className="lg:w-1/2 w-full leading-relaxed text-gray-400 text-opacity-90"
+            data-aos="fade-right"
+            data-aos-duration="500"
+          >
             Explore our diverse portfolio of innovative projects, showcasing our
             expertise in design, development, and creativity. See our work come
             to life!
@@ -435,7 +450,7 @@ const ConnectSectionNew = () => {
             <ul className="mt-5 font-medium flex flex-col p-4 md:p-0  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
               <li>
                 <a
-                  href="#"
+                  href="https://creators.spotify.com/pod/show/2mp"
                   className="block py-2 px-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
@@ -444,7 +459,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://linkedin.com/in/hashtagkaran"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <CiLinkedin color="white" />
@@ -452,7 +467,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://figma.com/@hashtagkaran"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <FaFigma color="white" />
@@ -460,7 +475,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/hashtagkaran"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <FiGithub color="white" />
@@ -468,7 +483,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://twitter.com/hashtagkaran"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <RiTwitterXFill color="white" />
@@ -476,7 +491,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://discordapp.com/users/471181383117570058"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <AiOutlineDiscord color="white" />
@@ -484,7 +499,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://hashtagkaran.gumroad.com"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <TbBrandGumroad color="white" />
@@ -492,7 +507,7 @@ const ConnectSectionNew = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="http://behance.net/hashtagkaran"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   <FaBehance color="white" />

@@ -31,7 +31,6 @@ const Newsletter = () => {
           }`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          onClick={() => alert("check here")}
         >
           <a
             className="flex justify-center items-center font-medium text-white"
