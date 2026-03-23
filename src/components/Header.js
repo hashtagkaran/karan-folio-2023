@@ -10,7 +10,7 @@ const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const handleDownload = () => {
     // URL of the file to download
-    const fileUrl = "/karan_singh_resume(updated).pdf"; // Replace with your file URL
+    const fileUrl = "/karan-singh-ui-ux.pdf"; // Replace with your file URL
     const fileName = "karan_singh_ui_ux_designer.pdf"; // The name of the downloaded file
 
     // Create an anchor element

@@ -11,7 +11,7 @@ const MPStripe = () => {
         New
       </span>{" "}
       <span className="text-sm font-medium">
-        2MP is in progress! See what's new
+        New Case Studies dropping soon. Stay tuned!
       </span>
       <svg
         className="ml-2 w-5 h-5"

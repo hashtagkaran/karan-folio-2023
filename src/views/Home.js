@@ -30,7 +30,7 @@ const HeroSection = () => {
             Hey, I'm Karan Singh
             <br />
             <div className="mt-5 leading-none md:text-[60px] lg:text-[80px]">
-              <span className="text-orange-500">UX Designer</span> with 5+ years
+              <span className="text-orange-500">UX Designer</span> with 7+ years
               of experience crafting intuitive web and mobile designs, from
               concept to launch.
             </div>
@@ -95,7 +95,7 @@ const AboutSection = () => {
             shapes my design world!
           </h2>
           <p className="mb-4" data-aos="fade-right">
-            UI/UX Designer and Developer with 5+ years of experience creating
+            UI/UX Designer and Developer with 7+ years of experience creating
             user-friendly and high-performing web and mobile applications.
             Expertise in all phases of the design and development process, from
             user research and wireframing to prototyping and implementation.
