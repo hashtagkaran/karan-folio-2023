@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
 import MPStripe from "../components/2mpStripe";
 
 const Portfolio = () => {
@@ -184,7 +183,7 @@ const ProjectList = () => {
               </div>
             </a>
 
-            <a href="#" className="group relative block h-64 sm:h-80 lg:h-96">
+            <div className="group relative block h-64 sm:h-80 lg:h-96">
               <span className="absolute inset-0 border-2 border-dashed border-white rounded-lg"></span>
               <div className="relative flex h-full transform items-end border-2 border-white rounded-lg bg-black text-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
                 <div className="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
@@ -208,7 +207,7 @@ const ProjectList = () => {
                   <p className="mt-8 font-bold">Read more</p>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>

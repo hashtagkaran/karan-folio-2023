@@ -5,7 +5,6 @@ const PortfolioDetail = () => {
   let { projectId } = useParams();
   // console.warn(projectId);
 
-  const makePost = () => {};
   const data = [
     {
       name: "Marriage App",
@@ -187,27 +186,27 @@ const PortfolioDetail = () => {
               {projectId ? (
                 <img src={data[projectId - 1].hero} alt="" width="100%" />
               ) : (
-                <img src="" alt="image not found" width="100%" />
+                <img src="" alt="" width="100%" />
               )}
               <br />
               {projectId ? (
                 <img src={data[projectId - 1].image1} alt="" width="100%" />
               ) : (
-                <img src="" alt="image not found" width="100%" />
+                <img src="" alt="" width="100%" />
               )}
               <br />
               {projectId ? (
                 <img src={data[projectId - 1].image2} alt="" width="100%" />
               ) : (
-                <img src="" alt="image not found" width="100%" />
+                <img src="" alt="" width="100%" />
               )}
               {/* <br />
             {
-              projectId ? <img src={data[projectId - 1].hero} alt="" width="100%" /> : <img src="" alt="image not found" width="100%" />
+              projectId ? <img src={data[projectId - 1].hero} alt="" width="100%" /> : <img src="" alt="" width="100%" />
             }
             <br />
             {
-              projectId ? <img src={data[projectId - 1].hero} alt="" width="100%" /> : <img src="" alt="image not found" width="100%" />
+              projectId ? <img src={data[projectId - 1].hero} alt="" width="100%" /> : <img src="" alt="" width="100%" />
             } */}
             </article>
           </div>
@@ -223,7 +222,7 @@ const PortfolioDetail = () => {
                 <ol className="inline-flex items-center space-x-1 md:space-x-3">
                   <li className="inline-flex items-center">
                     <a
-                      href="#"
+                      href="/"
                       className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
                     >
                       <svg
